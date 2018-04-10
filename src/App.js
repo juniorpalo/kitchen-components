@@ -12,7 +12,7 @@ class App extends Component {
 
   constructor() {
     super()
-    console.log('App.constructor()')
+    console.log('App.constructor()', this.state)
   }
 
   componentWillMount() {

@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 
 class Microwave extends Component {
+    state = {
+        powerIsOn: false
+    }
+
     constructor(props) {
         super(props)
         console.log('Microwave.constructor()', props)
+        
+        this.state.powerIsOn = props.powerIsOn
     }
 
     componentWillMount() {
